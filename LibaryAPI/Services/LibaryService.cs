@@ -115,7 +115,7 @@ namespace LibaryAPI.Services
             }
             if (_cache.TryGetValue("sorted", out IEnumerable<LibraryModel>? cached))
             {
-                //при изменении content кэш должен сбрасываться так как данные будут устаревшими(нужно добавить обработку при удалении или дорбавлении книг)
+                
                 if (cached != null && cached.Any())
                 {
                     _logger.LogInformation("Выведено из кэша");

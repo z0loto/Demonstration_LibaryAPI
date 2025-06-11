@@ -34,7 +34,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseAuthentication(); // перед app.UseAuthorization()
+app.UseAuthentication();
 app.UseAuthorization();
 
 // Создание ролей
